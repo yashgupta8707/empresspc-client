@@ -2,6 +2,12 @@ import { createContext, useContext, useState, useEffect } from "react";
 
 const AuthContext = createContext();
 
+// API Base URL - matches the configuration in api.js
+const API_BASE_URL = import.meta.env.VITE_API_URL ||
+  (import.meta.env.MODE === "production"
+    ? "/api"
+    : "http://localhost:5000/api");
+
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -28,7 +34,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (credentials) => {
     try {
-      const response = await fetch('http://localhost:5000/api/auth/login', {
+      const response = await fetch(`${API_BASE_URL}/auth/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -62,7 +68,7 @@ export const AuthProvider = ({ children }) => {
 
   const register = async (userData) => {
     try {
-      const response = await fetch('http://localhost:5000/api/auth/register', {
+      const response = await fetch(`${API_BASE_URL}/auth/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

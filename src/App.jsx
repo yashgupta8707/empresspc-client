@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { AuthProvider } from "./context/AuthContext";
 import { CartProvider } from "./components/CartContext";
+import ScrollToTop from "./components/ScrollToTop";
 
 // Auth Components
 import SignupLoginPage from "./pages/SignupLoginPage";
@@ -296,6 +297,7 @@ function App() {
     <AuthProvider>
       <CartProvider>
         <BrowserRouter>
+          <ScrollToTop />
           <div className="min-h-screen">
             <AnimatedRoutes />
           </div>

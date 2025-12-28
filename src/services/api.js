@@ -1,8 +1,14 @@
 // api.js - Complete API configuration for Empress Tech with Enhanced Testimonials
-const API_BASE_URL =
-  process.env.NODE_ENV === "production"
-    ? "https://your-production-domain.com/api"
-    : "http://localhost:5000/api";
+const API_BASE_URL = import.meta.env.VITE_API_URL ||
+  (import.meta.env.MODE === "production"
+    ? "/api"  // Use relative URL in production (proxied by same domain)
+    : "http://localhost:5000/api");  // Development backend
+
+console.log("🔧 API Configuration:", {
+  mode: import.meta.env.MODE,
+  apiUrl: API_BASE_URL,
+  env: import.meta.env.VITE_API_URL
+});
 
 // Helper function to get auth token
 const getAuthToken = () => {
