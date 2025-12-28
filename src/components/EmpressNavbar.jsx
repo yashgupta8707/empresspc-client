@@ -106,7 +106,7 @@ const EmpressNavbar = ({ theme = 'dark' }) => {
             ]
           },
           {
-            title: 'Components',
+            title: 'Gaming PCs',
             items: [
               { name: 'All Components', desc: 'Browse all components', href: '/components' },
               { name: 'Processors (CPUs)', desc: 'Intel & AMD processors', href: '/products/processors' },
@@ -116,7 +116,7 @@ const EmpressNavbar = ({ theme = 'dark' }) => {
             ]
           },
           {
-            title: 'Quick Access',
+            title: 'Creative PCs',
             items: [
               { name: 'Gaming Peripherals', desc: 'Keyboards, mice, headsets', href: '/products/keyboards' },
               { name: 'Monitors', desc: 'Gaming & professional displays', href: '/products/monitors' },
@@ -127,141 +127,141 @@ const EmpressNavbar = ({ theme = 'dark' }) => {
         ]
       }
     },
-    {
-      label: 'PC Systems',
-      href: '/products',
-      submenu: {
-        sections: [
-          {
-            title: 'Gaming Systems',
-            items: [
-              { name: 'Gaming PCs', desc: 'High-performance gaming rigs', featured: true, href: '/products/gaming-pc' },
-              { name: 'Streaming PCs', desc: 'Dedicated streaming systems', href: '/products/streaming-pc' },
-              { name: 'Budget Gaming', desc: 'Entry-level gaming PCs', href: '/products/budget-pc' }
-            ]
-          },
-          {
-            title: 'Professional Systems',
-            items: [
-              { name: 'Workstation PCs', desc: 'Professional workstations', href: '/products/workstation-pc' },
-              { name: 'Creative PCs', desc: 'For content creation', href: '/products/creative-pc' },
-              { name: 'Productivity PCs', desc: 'Business & office systems', href: '/products/productivity-pc' },
-              { name: 'Office PCs', desc: 'Corporate environments', href: '/products/office-pc' }
-            ]
-          },
-          {
-            title: 'Specialized Systems',
-            items: [
-              { name: 'Mini PCs', desc: 'Compact form factor', href: '/products/mini-pc' },
-              { name: 'Custom Builds', desc: 'Tailored solutions', href: '/contact' },
-              { name: 'Bulk Orders', desc: 'Enterprise solutions', href: '/contact' }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      label: 'Components',
-      href: '/components',
-      submenu: {
-        sections: [
-          {
-            title: 'Core Components',
-            items: [
-              { name: 'All Components', desc: 'Complete component lineup', featured: true, href: '/components' },
-              { name: 'Processors (CPUs)', desc: 'Intel & AMD CPUs', href: '/products/processors' },
-              { name: 'Graphics Cards', desc: 'NVIDIA & AMD GPUs', href: '/products/graphics-cards' },
-              { name: 'Motherboards', desc: 'Feature-rich platforms', href: '/products/motherboards' },
-              { name: 'Memory (RAM)', desc: 'High-speed DDR4/DDR5', href: '/products/memory' }
-            ]
-          },
-          {
-            title: 'Storage & Power',
-            items: [
-              { name: 'Storage Solutions', desc: 'SSDs, HDDs, NVMe drives', href: '/products/storage' },
-              { name: 'Power Supplies', desc: 'Reliable PSU units', href: '/products/power-supplies' },
-              { name: 'PC Cases', desc: 'Stylish & functional cases', href: '/products/cases' },
-              { name: 'Cooling Systems', desc: 'Air & liquid cooling', href: '/products/cooling' }
-            ]
-          },
-          {
-            title: 'Build Support',
-            items: [
-              { name: 'PC Builder Tool', desc: 'Build your custom PC', href: '/pcbuilder' },
-              { name: 'Component Guide', desc: 'Expert recommendations', href: '/components' },
-              { name: 'Compatibility Check', desc: 'Ensure compatibility', href: '/contact' }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      label: 'Peripherals',
-      href: '/products/monitors', // Default to monitors as main peripheral
-      submenu: {
-        sections: [
-          {
-            title: 'Display & Input',
-            items: [
-              { name: 'Gaming Monitors', desc: 'High-refresh gaming displays', featured: true, href: '/products/monitors' },
-              { name: 'Mechanical Keyboards', desc: 'Premium typing experience', href: '/products/keyboards' },
-              { name: 'Gaming Mice', desc: 'Precision gaming control', href: '/products/mice' },
-              { name: 'Mouse Pads', desc: 'Gaming & precision surfaces', href: '/products/mouse-pads' }
-            ]
-          },
-          {
-            title: 'Audio & Recording',
-            items: [
-              { name: 'Gaming Headsets', desc: 'Immersive gaming audio', href: '/products/headsets' },
-              { name: 'Speakers', desc: 'Desktop & studio speakers', href: '/products/speakers' },
-              { name: 'Microphones', desc: 'Streaming & recording', href: '/products/microphones' },
-              { name: 'Webcams', desc: 'HD streaming cameras', href: '/products/webcams' }
-            ]
-          },
-          {
-            title: 'Setup & Accessories',
-            items: [
-              { name: 'All Accessories', desc: 'Browse all peripherals', href: '/products/accessories' },
-              { name: 'Monitor Arms', desc: 'Ergonomic positioning', href: '/products/accessories' },
-              { name: 'Desk Setup', desc: 'Organize your workspace', href: '/products/accessories' },
-              { name: 'Cable Management', desc: 'Clean cable routing', href: '/products/accessories' }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      label: 'Accessories',
-      href: '/products/cables-adapters',
-      submenu: {
-        sections: [
-          {
-            title: 'Connectivity',
-            items: [
-              { name: 'Cables & Adapters', desc: 'USB, HDMI, DisplayPort', featured: true, href: '/products/cables-adapters' },
-              { name: 'Networking Equipment', desc: 'Routers, switches, WiFi', href: '/products/networking' },
-              { name: 'External Storage', desc: 'Portable drives & backup', href: '/products/external-storage' }
-            ]
-          },
-          {
-            title: 'Office Equipment',
-            items: [
-              { name: 'Printers & Scanners', desc: 'Document solutions', href: '/products/printers-scanners' },
-              { name: 'UPS & Power', desc: 'Backup power solutions', href: '/products/accessories' },
-              { name: 'Desk Accessories', desc: 'Workspace organization', href: '/products/accessories' }
-            ]
-          },
-          {
-            title: 'Support',
-            items: [
-              { name: 'Installation Service', desc: 'Professional setup', href: '/contact' },
-              { name: 'Tech Support', desc: 'Expert assistance', href: '/contact' },
-              { name: 'Bulk Orders', desc: 'Corporate solutions', href: '/contact' }
-            ]
-          }
-        ]
-      }
-    },
+    // {
+    //   label: 'PC Systems',
+    //   href: '/products',
+    //   submenu: {
+    //     sections: [
+    //       {
+    //         title: 'Gaming Systems',
+    //         items: [
+    //           { name: 'Gaming PCs', desc: 'High-performance gaming rigs', featured: true, href: '/products/gaming-pc' },
+    //           { name: 'Streaming PCs', desc: 'Dedicated streaming systems', href: '/products/streaming-pc' },
+    //           { name: 'Budget Gaming', desc: 'Entry-level gaming PCs', href: '/products/budget-pc' }
+    //         ]
+    //       },
+    //       {
+    //         title: 'Professional Systems',
+    //         items: [
+    //           { name: 'Workstation PCs', desc: 'Professional workstations', href: '/products/workstation-pc' },
+    //           { name: 'Creative PCs', desc: 'For content creation', href: '/products/creative-pc' },
+    //           { name: 'Productivity PCs', desc: 'Business & office systems', href: '/products/productivity-pc' },
+    //           { name: 'Office PCs', desc: 'Corporate environments', href: '/products/office-pc' }
+    //         ]
+    //       },
+    //       {
+    //         title: 'Specialized Systems',
+    //         items: [
+    //           { name: 'Mini PCs', desc: 'Compact form factor', href: '/products/mini-pc' },
+    //           { name: 'Custom Builds', desc: 'Tailored solutions', href: '/contact' },
+    //           { name: 'Bulk Orders', desc: 'Enterprise solutions', href: '/contact' }
+    //         ]
+    //       }
+    //     ]
+    //   }
+    // },
+    // {
+    //   label: 'Components',
+    //   href: '/components',
+    //   submenu: {
+    //     sections: [
+    //       {
+    //         title: 'Core Components',
+    //         items: [
+    //           { name: 'All Components', desc: 'Complete component lineup', featured: true, href: '/components' },
+    //           { name: 'Processors (CPUs)', desc: 'Intel & AMD CPUs', href: '/products/processors' },
+    //           { name: 'Graphics Cards', desc: 'NVIDIA & AMD GPUs', href: '/products/graphics-cards' },
+    //           { name: 'Motherboards', desc: 'Feature-rich platforms', href: '/products/motherboards' },
+    //           { name: 'Memory (RAM)', desc: 'High-speed DDR4/DDR5', href: '/products/memory' }
+    //         ]
+    //       },
+    //       {
+    //         title: 'Storage & Power',
+    //         items: [
+    //           { name: 'Storage Solutions', desc: 'SSDs, HDDs, NVMe drives', href: '/products/storage' },
+    //           { name: 'Power Supplies', desc: 'Reliable PSU units', href: '/products/power-supplies' },
+    //           { name: 'PC Cases', desc: 'Stylish & functional cases', href: '/products/cases' },
+    //           { name: 'Cooling Systems', desc: 'Air & liquid cooling', href: '/products/cooling' }
+    //         ]
+    //       },
+    //       {
+    //         title: 'Build Support',
+    //         items: [
+    //           { name: 'PC Builder Tool', desc: 'Build your custom PC', href: '/pcbuilder' },
+    //           { name: 'Component Guide', desc: 'Expert recommendations', href: '/components' },
+    //           { name: 'Compatibility Check', desc: 'Ensure compatibility', href: '/contact' }
+    //         ]
+    //       }
+    //     ]
+    //   }
+    // },
+    // {
+    //   label: 'Peripherals',
+    //   href: '/products/monitors', // Default to monitors as main peripheral
+    //   submenu: {
+    //     sections: [
+    //       {
+    //         title: 'Display & Input',
+    //         items: [
+    //           { name: 'Gaming Monitors', desc: 'High-refresh gaming displays', featured: true, href: '/products/monitors' },
+    //           { name: 'Mechanical Keyboards', desc: 'Premium typing experience', href: '/products/keyboards' },
+    //           { name: 'Gaming Mice', desc: 'Precision gaming control', href: '/products/mice' },
+    //           { name: 'Mouse Pads', desc: 'Gaming & precision surfaces', href: '/products/mouse-pads' }
+    //         ]
+    //       },
+    //       {
+    //         title: 'Audio & Recording',
+    //         items: [
+    //           { name: 'Gaming Headsets', desc: 'Immersive gaming audio', href: '/products/headsets' },
+    //           { name: 'Speakers', desc: 'Desktop & studio speakers', href: '/products/speakers' },
+    //           { name: 'Microphones', desc: 'Streaming & recording', href: '/products/microphones' },
+    //           { name: 'Webcams', desc: 'HD streaming cameras', href: '/products/webcams' }
+    //         ]
+    //       },
+    //       {
+    //         title: 'Setup & Accessories',
+    //         items: [
+    //           { name: 'All Accessories', desc: 'Browse all peripherals', href: '/products/accessories' },
+    //           { name: 'Monitor Arms', desc: 'Ergonomic positioning', href: '/products/accessories' },
+    //           { name: 'Desk Setup', desc: 'Organize your workspace', href: '/products/accessories' },
+    //           { name: 'Cable Management', desc: 'Clean cable routing', href: '/products/accessories' }
+    //         ]
+    //       }
+    //     ]
+    //   }
+    // },
+    // {
+    //   label: 'Accessories',
+    //   href: '/products/cables-adapters',
+    //   submenu: {
+    //     sections: [
+    //       {
+    //         title: 'Connectivity',
+    //         items: [
+    //           { name: 'Cables & Adapters', desc: 'USB, HDMI, DisplayPort', featured: true, href: '/products/cables-adapters' },
+    //           { name: 'Networking Equipment', desc: 'Routers, switches, WiFi', href: '/products/networking' },
+    //           { name: 'External Storage', desc: 'Portable drives & backup', href: '/products/external-storage' }
+    //         ]
+    //       },
+    //       {
+    //         title: 'Office Equipment',
+    //         items: [
+    //           { name: 'Printers & Scanners', desc: 'Document solutions', href: '/products/printers-scanners' },
+    //           { name: 'UPS & Power', desc: 'Backup power solutions', href: '/products/accessories' },
+    //           { name: 'Desk Accessories', desc: 'Workspace organization', href: '/products/accessories' }
+    //         ]
+    //       },
+    //       {
+    //         title: 'Support',
+    //         items: [
+    //           { name: 'Installation Service', desc: 'Professional setup', href: '/contact' },
+    //           { name: 'Tech Support', desc: 'Expert assistance', href: '/contact' },
+    //           { name: 'Bulk Orders', desc: 'Corporate solutions', href: '/contact' }
+    //         ]
+    //       }
+    //     ]
+    //   }
+    // },
     {
       label: 'About',
       href: '/about'
@@ -277,7 +277,15 @@ const EmpressNavbar = ({ theme = 'dark' }) => {
     {
       label: 'FAQs',
       href: '/faqs'
+    },
+    {
+      label: 'Contact',
+      href: '/contact'
     }
+    // {
+    //   label: 'Nvidia',
+    //   href: '/nvidia'
+    // }
   ];
 
   const isDark = theme === 'dark';

@@ -202,7 +202,7 @@ const ProductDetailPage = () => {
           {/* Brand and Category */}
           <div className="flex items-center gap-2 mb-2">
             <span className="text-xs text-gray-500 uppercase font-semibold tracking-wide">
-              {product.brand}
+              {product.brand}'s
             </span>
             <span className="text-xs text-gray-400">•</span>
             <span className="text-xs text-gray-500 capitalize">

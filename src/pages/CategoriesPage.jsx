@@ -468,7 +468,7 @@ const CategoriesPage = () => {
         </section>
 
         {/* Category Group Filter */}
-        <section className="bg-[#2C2C2C] border-b border-[#333333]">
+        {/* <section className="bg-[#2C2C2C] border-b border-[#333333]">
           <div className="max-w-7xl mx-auto px-4 md:px-6 py-6">
             <div className="flex flex-wrap justify-center gap-3">
               {groupNames.map((groupName) => (
@@ -491,7 +491,7 @@ const CategoriesPage = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Categories Grid */}
         <section className="bg-[#1E1E1E] py-12 md:py-20">

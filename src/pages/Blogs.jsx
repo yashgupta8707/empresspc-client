@@ -44,7 +44,7 @@ export default function BlogsPage() {
       setLoading(true);
       const params = {
         page: currentPage,
-        limit: 6,
+        limit: 18,
         ...(selectedCategory !== 'all' && { category: selectedCategory }),
         ...(selectedType !== 'all' && { type: selectedType })
       };
@@ -100,8 +100,8 @@ export default function BlogsPage() {
   return (
     <>
       <Navbar />
-      <BlogsHero />
-      <EditorsChoice />
+      {/* <BlogsHero /> */}
+      {/* <EditorsChoice /> */}
       
       <div className="bg-white min-h-screen px-4 py-10 md:px-24">
         <h1 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
@@ -166,7 +166,7 @@ export default function BlogsPage() {
         </div>
 
         {/* Category Filter */}
-        <div className="flex gap-4 flex-wrap justify-center mb-10">
+        {/* <div className="flex gap-4 flex-wrap justify-center mb-10">
           {categories.map((cat) => (
             <button
               key={cat.value}
@@ -180,14 +180,14 @@ export default function BlogsPage() {
               {cat.label}
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* Loading State */}
-        {loading && currentPage === 1 && (
+        {/* {loading && currentPage === 1 && (
           <div className="flex justify-center py-12">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-500"></div>
           </div>
-        )}
+        )} */}
 
         {/* Content Grid */}
         {!loading && blogs.length === 0 ? (
@@ -203,7 +203,7 @@ export default function BlogsPage() {
         )}
 
         {/* Load More Button */}
-        {pagination.hasNextPage && !loading && (
+        {/* {pagination.hasNextPage && !loading && (
           <div className="flex justify-center mt-10">
             <button
               className="px-6 py-2 border border-black text-black hover:bg-black hover:text-white transition"
@@ -213,17 +213,17 @@ export default function BlogsPage() {
               {loading ? 'Loading...' : 'Show More'}
             </button>
           </div>
-        )}
+        )} */}
 
         {/* Pagination Info */}
-        {pagination.total > 0 && (
+        {/* {pagination.total > 0 && (
           <div className="text-center mt-8 text-gray-500 text-sm">
             Showing {blogs.length} of {pagination.total} items
           </div>
-        )}
+        )} */}
       </div>
       
-      <WeeklyBestNews />
+      {/* <WeeklyBestNews /> */}
       <Footer />
     </>
   );
